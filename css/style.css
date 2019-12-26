@@ -25,11 +25,27 @@ body
 
 .user-box img{
     border-radius: 50%;
-    width: 250px;
+    /*width: 250px;*/
     border: 2px solid #6caed5;
-
+    max-width:250px;
+    height:auto;
 
 }
+
+
+
+@media only screen and (max-height:600px) {
+    /* For mobile phones: */
+    .user-box img {
+        max-width:150px;
+        transition: 0.7s;
+    }
+
+    .scroll-bar span {
+        font-size: 5px;
+    }
+
+  }
 
 .user-box h1{
 
